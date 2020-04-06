@@ -11,12 +11,14 @@ import {AboutComponent} from './components/about/about.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatListModule} from "@angular/material/list";
+import { StuffComponent } from './components/stuff/stuff.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    StuffComponent
   ],
   imports: [
     FlexLayoutModule,
