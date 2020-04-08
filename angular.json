@@ -5,7 +5,11 @@
   "projects": {
     "NgProject": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -121,12 +125,6 @@
           }
         }
       }
-    }
-  },
-  "defaultProject": "NgProject",
-  "schematics": {
-    "@schematics/angular:component": {
-      "styleext": "scss"
     }
   }
 }
