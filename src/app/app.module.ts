@@ -11,12 +11,16 @@ import {AboutComponent} from './components/about/about.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatListModule} from "@angular/material/list";
+import {StepperComponent} from './components/stepper/stepper.component';
+import {MatStepperModule} from "@angular/material/stepper";
+import {MatFormFieldModule} from "@angular/material/form-field";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    StepperComponent
   ],
   imports: [
     FlexLayoutModule,
@@ -25,7 +29,9 @@ import {MatListModule} from "@angular/material/list";
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatListModule
+    MatListModule,
+    MatStepperModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
